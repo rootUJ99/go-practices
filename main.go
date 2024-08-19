@@ -6,6 +6,9 @@ import (
 	"math/cmplx"
 	"math/rand"
 	"reflect"
+
+	"github.com/rootuj99/golangpractice/modules"
+	"github.com/rootuj99/golangpractice/modules/submodules"
 )
 
 func add(x, y int) int {
@@ -129,6 +132,12 @@ func main() {
 	ref2 := reflect.TypeOf(val3)
 
 	fmt.Println("this is reflect package usage", ref1, ref2)
+
+	modules1.NewModule()
+	modules1.NewNewModule()
+	submodules1.NewSubModule()
+	
+
 }
 
 func sumOfFewNumbers(ch chan int) {

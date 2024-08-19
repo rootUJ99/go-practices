@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"sync"
 	"time"
+
+	"github.com/rootuj99/golangpractice/modules"
 )
 
 
@@ -42,4 +44,5 @@ func main(){
 	endTime:= time.Now()
 	fmt.Println(endTime, startTime, "yoo")
 	fmt.Println(endTime.Sub(startTime), "yoo")
+	modules1.NewModule()
 }
